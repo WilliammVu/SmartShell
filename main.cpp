@@ -78,7 +78,7 @@ int main() {
         }
         else if (command == "cd") {
             if (tokens.size() < 2) {
-                std::cerr << "Usage: cd <path>\n";
+                std::cerr << "Incorrect usage of 'cd', enter 'help' for assistance.\n";
             } else {
                 fs::path newPath = currentPath / tokens[1];
                 try {
@@ -94,7 +94,7 @@ int main() {
         }
         else if (command == "mkdir") {
             if (tokens.size() < 2) {
-                std::cerr << "Usage: mkdir <directory_name>\n";
+                std::cerr << "Incorrect usage of 'mkdir', enter 'help' for assistance.\n";
             } else {
                 fs::path dirName = currentPath / tokens[1];
                 try {
@@ -110,7 +110,7 @@ int main() {
         }
         else if (command == "touch") {
             if (tokens.size() < 2) {
-                std::cerr << "Usage: touch <file_name>\n";
+                std::cerr << "Incorrect usage of 'touch', enter 'help' for assistance.\n";
             } else {
                 fs::path filePath = currentPath / tokens[1];
                 try {
@@ -128,7 +128,7 @@ int main() {
         }
         else if (command == "rm"){
             if (tokens.size() < 2){
-                std::cerr << "Usage: rm <file_or_dir_name>\n";
+                std::cerr << "Incorrect usage of 'rm', enter 'help' for assistance.\n";
             } else {
                 fs::path targetPath = currentPath / tokens[1];
                 try {
@@ -168,7 +168,7 @@ int main() {
         }
         else if (command == "rename") {
             if (tokens.size() < 3) {
-                std::cerr << "Usage: rename <old> <new>\n";
+                std::cerr << "Incorrect Usage of 'rename', enter 'help' for assistance.\n";
             } else {
                 fs::path oldPath = currentPath / tokens[1];
                 fs::path newPath = currentPath / tokens[2];
