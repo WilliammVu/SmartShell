@@ -6,8 +6,9 @@ Essentially a subset of zsh/bash but with assistance that increases ease-of-use
 
 Prerequisites:
 - C++ compiler with support for C++ version 17
-- This program supports Linux/MacOS/Windows
+- Change some code for Windows, since this program runs on Linux/MacOS
 
 Future Recommendations:
 - add more functionality (e.g. move, echo, cat, etc.)
 - Replace main function's else if chain into a switch table
+- add support for Windows
