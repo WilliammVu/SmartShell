@@ -9,6 +9,6 @@ Prerequisites:
 - Change some code for Windows, since this program runs on Linux/MacOS
 
 Future Recommendations:
-- add more functionality (e.g. move, echo, cat, etc.)
+- add more functionality (e.g. move, echo, cat, alias, etc.)
 - Replace main function's else if chain into a switch table
 - add support for Windows
